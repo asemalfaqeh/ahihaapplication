@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="المستشفيات والمراكز الصحية"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:textColor="#9c4b4b"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:text="--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/namecenter"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <TextView
+        android:text="المدينة"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:id="@+id/cityview"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:textColor="#9c4b4b"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:text="--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/centercity"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <TextView
+        android:text="المنطقة"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:id="@+id/regionview"
+        android:gravity="right"
+        android:textColor="#9c4b4b"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:text="--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/regionecenter"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:text="اسم الشارع"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:id="@+id/streetview"
+        android:gravity="right"
+        android:textColor="#9c4b4b"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:text="--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/streetname"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="رقم الهاتف"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:textSize="22dp"
+        android:id="@+id/phoneview"
+        android:gravity="right"
+        android:textColor="#9c4b4b"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:text="--"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textSize="18dp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:id="@+id/phonecenter"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

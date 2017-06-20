@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ahiha.pro.ahihaapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- intent here -->
+        </activity>
+        <activity android:name=".Auth.LoginActivity"
+            android:noHistory="true"></activity>
+        <activity
+            android:name=".Auth.RegisterMySqlActivity"
+            android:label="@string/register_name_activity"
+            android:parentActivityName=".Auth.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Auth.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".Auth.ResetPassowrdActivity"
+            android:label="@string/re_password"
+            android:parentActivityName=".Auth.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Auth.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".MainActivityRes.Settings_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:label="الأعدادات"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivityRes.Calls_Activity"
+            android:label="الأستدعاءات"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".testactivity" />
+        <activity
+            android:name=".MainActivityRes.Donor_Profile"
+            android:label="الملف الشخصي"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivityRes.Update_DonorProfile"
+            android:label="تحديث الملف الشخصي"
+            android:parentActivityName=".MainActivityRes.Donor_Profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityRes.Donor_Profile" />
+        </activity>
+        <activity
+            android:name=".MainActivityRes.Centers_Activity"
+            android:label="المراكز الصحية"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".MainActivityRes.advicevoruser"
+            android:parentActivityName=".MainActivity"
+            android:label="النصائح والأرشادات">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

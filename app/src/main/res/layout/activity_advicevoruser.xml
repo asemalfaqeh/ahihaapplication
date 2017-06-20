@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advicevoruser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="app.ahiha.pro.ahihaapplication.MainActivityRes.advicevoruser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:text="الكمية التي يجب التبرع بها"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:id="@+id/adt1"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv1"
+                android:gravity="right"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="لا توجد أي مضاعفات"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:id="@+id/advt2"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv2"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:padding="12dp"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="قبل التبرع بالدم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:id="@+id/advt3"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv3"
+                android:gravity="right"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="بعد التبرع بالدم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:id="@+id/advt4"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv4"
+                android:gravity="right"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/setting"
+    tools:context="app.ahiha.pro.ahihaapplication.MainActivityRes.Settings_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        tools:ignore="UselessParent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/update_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="البريد الإلكتروني الجديد "
+        android:visibility="gone"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/MyTextInputLayoutErrorText"
+        tools:ignore="HardcodedText">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/update_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:enabled="true"
+            android:gravity="fill_horizontal"
+            android:inputType="textWebEmailAddress"
+            android:imeOptions="actionNext"
+            tools:ignore="Deprecated" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="تحديث"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:onClick="Update_E_Click"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="right"
+        android:id="@+id/update_email_click"
+        android:background="@drawable/iconmainbtn"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/update_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="كلمة السر الجديدة"
+        android:visibility="gone"
+        app:errorEnabled="true"
+
+        app:errorTextAppearance="@style/MyTextInputLayoutErrorText"
+            tools:ignore="HardcodedText">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/update_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:enabled="true"
+            android:gravity="fill_horizontal"
+            android:inputType="textWebPassword"
+            android:imeOptions="actionNext"
+            tools:ignore="Deprecated" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:text="تحديث"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:onClick="Update_Password_Click"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:id="@+id/update_password_unvbtn"
+        android:background="@drawable/iconmainbtn"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+
+        <Button
+            android:text="تحديث البريد الإلكتروني "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconmainbtn"
+            android:textColor="#ffffff"
+            android:visibility="visible"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:onClick="Update_Email"
+            android:id="@+id/update_email_btn"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Button
+        android:text="تحديث كلمة السر"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconmainbtn"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:onClick="Update_Password"
+        android:textStyle="bold"
+        android:id="@+id/update_passowrd_vbtn"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:text="الغاء الحساب"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconmainbtn"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:onClick="Delete_Profile"
+        android:textStyle="bold"
+        android:id="@+id/delete_profile"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:text="تسجيل الخروج"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconmainbtn"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:onClick="Logout"
+        android:textStyle="bold"
+        android:id="@+id/Logout_btn"
+        tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+</LinearLayout>

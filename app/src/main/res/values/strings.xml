@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">آحيها</string>
+    <string name="re_password">أعادة تعيين كلمة السر</string>
+    <string name="Email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="register_name_activity">انشاء حساب</string>
+    <string name="username">اسم المتبرع</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="city">المدينة</string>
+    <string name="region">المنطقة</string>
+    <string name="dateofbirth">تاريخ الميلاد</string>
+    <string name="bloodspiner">: فصيل الدم</string>
+    <string name="resetpassword"><u>أعادة تعيين كلمة السر</u></string>
+    <string name="reset_password_label">تم ارسال اعادة تعيين كلمة السر الى البريد الإلكتروني</string>
+</resources>

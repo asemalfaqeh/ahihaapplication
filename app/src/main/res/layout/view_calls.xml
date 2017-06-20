@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:text="اسم المركز او المستشفى: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:textStyle="bold"
+            android:textColor="#783939"
+            android:layout_marginTop="22dp"
+            android:id="@+id/hospitaname"
+            tools:ignore="HardcodedText,SpUsage"
+            android:textSize="22dp" />
+
+        <TextView
+            android:text="الحالة الصحية"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hospitaname"
+            android:layout_alignRight="@+id/hospitaname"
+            android:layout_alignEnd="@+id/hospitaname"
+            android:id="@+id/patienthealth"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_alignLeft="@+id/hospitaname"
+            android:layout_alignStart="@+id/hospitaname"
+            android:textColor="#783939"
+            android:textSize="22dp" />
+
+        <TextView
+            android:text="عدد وحدات الدم"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patienthealth"
+            android:layout_alignRight="@+id/patienthealth"
+            android:layout_alignEnd="@+id/patienthealth"
+            android:id="@+id/numblood"
+            android:textSize="22dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_alignLeft="@+id/patienthealth"
+            android:layout_alignStart="@+id/patienthealth"
+            android:textColor="#783939" />
+
+        <TextView
+            android:text="العنوان"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numblood"
+            android:layout_alignRight="@+id/numblood"
+            android:layout_alignEnd="@+id/numblood"
+            android:id="@+id/address"
+            android:textSize="22dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_alignLeft="@+id/numblood"
+            android:layout_alignStart="@+id/numblood"
+            android:textColor="#783939" />
+
+        <TextView
+            android:text="فصيل الدم المطلوب"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_alignRight="@+id/address"
+            android:layout_alignEnd="@+id/address"
+            android:textSize="22dp"
+            android:id="@+id/tyblood"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignStart="@+id/address"
+            android:textColor="#783939" />
+
+        <TextView
+            android:text="تاريخ ارسال الاستدعاء"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tyblood"
+            android:id="@+id/startdate"
+            android:textSize="22dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:layout_alignRight="@+id/tyblood"
+            android:layout_alignEnd="@+id/tyblood"
+            android:layout_alignLeft="@+id/tyblood"
+            android:layout_alignStart="@+id/tyblood"
+            android:textColor="#783939"
+            android:lineSpacingExtra="8sp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hospitaname"
+            android:id="@+id/hpspitanameview"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/hospitaname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+
+            android:layout_toLeftOf="@+id/hospitaname"
+            android:layout_toStartOf="@+id/hospitaname" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/numblood"
+            android:id="@+id/patienthealthview"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hospitaname"
+            android:layout_alignRight="@+id/hpspitanameview"
+            android:layout_alignEnd="@+id/hpspitanameview"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+             />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numbloodview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/addressview"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/numbloodview"
+            android:layout_alignEnd="@+id/numbloodview"
+            android:layout_above="@+id/tyblood"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:textSize="18dp"
+           />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tybloodview"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/addressview"
+            android:layout_alignEnd="@+id/addressview"
+            android:layout_below="@+id/addressview"
+            android:layout_above="@+id/startdate"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:textSize="18dp"
+             />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/startdateview"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/tybloodview"
+            android:layout_alignEnd="@+id/tybloodview"
+            android:layout_below="@+id/tybloodview"
+            android:layout_alignBottom="@+id/startdate"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:text="تاريخ انتهاء الاستدعاء"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:id="@+id/enddate"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage"
+            android:layout_below="@+id/startdate"
+            android:layout_toRightOf="@+id/enddateview"
+            android:layout_alignRight="@+id/startdate"
+            android:layout_alignEnd="@+id/startdate"
+            android:textColor="#783939"
+            android:lineSpacingExtra="8sp" />
+        <TextView
+            android:text="رقم الهاتف للتواصل"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:id="@+id/phonetocallconst"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage"
+            android:layout_below="@+id/enddate"
+            android:layout_toRightOf="@+id/enddateview"
+            android:layout_alignRight="@+id/startdate"
+            android:layout_alignEnd="@+id/startdate"
+            android:textColor="#783939"
+            android:lineSpacingExtra="8sp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enddateview"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:layout_below="@+id/startdateview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/startdate"
+            android:layout_toLeftOf="@+id/startdate"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_above="@+id/phonetocallconst" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numbloodview"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:layout_below="@+id/patienthealthview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/patienthealthview"
+            android:layout_alignEnd="@+id/patienthealthview"
+            android:textSize="18dp"
+            android:layout_above="@+id/address" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:id="@+id/phonetocall"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:layout_below="@+id/enddate"
+            android:layout_toLeftOf="@+id/phonetocallconst"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/phonetocallconst" />
+
+        <TextView
+            android:text="ملاحظة*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonetocallconst"
+            android:id="@+id/notes"
+            android:textColor="#000000"
+            android:gravity="right"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:paddingRight="28dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage"
+            android:layout_alignRight="@+id/phonetocallconst"
+            android:layout_alignEnd="@+id/phonetocallconst" />
+    </RelativeLayout>
+
+</LinearLayout>

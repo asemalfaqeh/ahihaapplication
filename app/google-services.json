@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "186713657228",
+    "firebase_url": "https://bank-aldm-project.firebaseio.com",
+    "project_id": "bank-aldm-project",
+    "storage_bucket": "bank-aldm-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186713657228:android:b335233f951362d4",
+        "android_client_info": {
+          "package_name": "app.ahiha.pro.ahihaapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186713657228-o1gcb778ei0vpa6333mdm9gq3enkmpk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.ahiha.pro.ahihaapplication",
+            "certificate_hash": "53c0b73fa66a1dd43728734386406e85d6bffa63"
+          }
+        },
+        {
+          "client_id": "186713657228-3ae7lnrhru1bs29gufterqt1qk7gltuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlUcBaqVyWI7Z9ckajcDWyXe3SSl9x_kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186713657228-3ae7lnrhru1bs29gufterqt1qk7gltuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
